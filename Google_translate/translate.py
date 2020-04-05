@@ -20,7 +20,7 @@ def driver_create():
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-gpu") # efficient web driver initization
         chrome_options.add_argument("--headless")
-        driver = webdriver.Chrome('/home/john/debug/chromedriver',options=chrome_options)
+        driver = webdriver.Chrome('chromedriver',options=chrome_options)
         driver.get("https://translate.google.com/#view=home&op=translate&sl=en&tl=hy") 
         setattr(threadLocal, 'driver', driver)
     return driver

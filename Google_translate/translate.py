@@ -28,13 +28,13 @@ def driver_create():
 
 def trans_get(texts):
     driver=driver_create()
-    time.sleep(1) # wait to avoiding repetated copy
     wait = WebDriverWait(driver, 10)
     input=wait.until(lambda driver: driver.find_element_by_xpath('//textarea[@id="source"]')) # get input textarea if it exists
     input.send_keys(texts)
     output=wait.until(lambda driver: driver.find_element_by_xpath('//span[@class="tlid-translation translation"]')) # get output if it exists
     with open('outputneg.txt','a') as f:
         f.write(output.text+'\n')
+    time.sleep(1) # wait to avoiding repetated copy
     input.clear()
 
 mylist = [f for f in glob.glob("neg/*.txt")] # get filenames

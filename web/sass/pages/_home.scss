@@ -1,0 +1,37 @@
+//TRIABGLE
+.triangle{
+    margin-top:-1rem;
+    // margin-left: -2.5rem;
+    display:inline-block;
+    position: absolute;
+}
+.triangle-1{
+    position:relative;
+    display:inline-block;
+    opacity: 50%;
+    transform: rotate(-90deg) skewX(-30deg) scale(1,.866);
+    width:  $size-of-a-triangle;
+    height: $size-of-a-triangle;
+    border-top-right-radius: 30%;
+    background-color:#FFE8DA;
+    &:before,
+    &:after{
+        position:absolute;
+        background-color:inherit;
+        content: '';
+        width:  $size-of-a-triangle;
+        height: $size-of-a-triangle;
+        border-top-right-radius: 30%;
+    }
+    &:before{
+        transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+    }
+    &:after{
+        transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+    }
+
+}
+
+.u-margin-top-medium{
+    margin-top:4rem;
+}

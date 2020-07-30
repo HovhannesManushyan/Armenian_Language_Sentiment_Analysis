@@ -1,3 +1,3 @@
 # Armenian_Language_Sentiment_Analysis
 
-![](https://gfycat.com/bitesizedabsolutebat)
+![](https://media.giphy.com/media/j5iYRAAx0uw76dr4Gr/giphy.gif)

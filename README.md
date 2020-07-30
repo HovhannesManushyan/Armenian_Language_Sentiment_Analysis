@@ -1,3 +1,3 @@
 # Armenian_Language_Sentiment_Analysis
 
-![](https://media.giphy.com/media/j5iYRAAx0uw76dr4Gr/giphy.gif)
+[![](https://img.youtube.com/vi/b31KXOy16Uk/0.jpg)](https://youtu.be/b31KXOy16Uk)
